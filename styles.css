@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(209, 233, 255);
+}
+
+nav {
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: rgb(163, 193, 220);
+    height: 70px;
+    box-shadow: 4px 4px 8px rgb(113, 134, 153);
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.showToggle {
+    background: transparent;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 56px;
+    border: transparent;
+    cursor: pointer;
+}
+
+.showToggle:hover {
+    transform: rotate(90deg);
+}
+
+.logo {
+    margin: 0;
+    font-size: 36px;
+    padding: 8px 30px;
+    height: 40px;
+}
+
+.links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 35%;
+    display: inline-flex;
+
+}
+
+.link {
+    font-size: 24px;
+    border-right: 1px solid rgb(127, 142, 156);
+    height: 72%;
+    width: 240px;
+    padding-top: 20px;
+    margin-left: auto;
+    text-transform: uppercase;
+}
+
+.contact {
+    font-size: 24px;
+    height: 72%;
+    width: 240px;
+    padding-top: 20px;
+    margin-left: auto;
+    text-transform: uppercase;
+    border-right: none;
+}
+
+.contact:hover, .link:hover {
+    background-color: rgb(146, 173, 197);
+}
+
+.nav-center {
+    display: inline-flex;
+}
+
+.social-icons {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 0 25px;
+    display: block;
+    text-align: center;
+}
+
+.hideToggle {
+    display: none;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 56px;
+    border: transparent;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .showToggle {
+        display: block;
+    }
+    .nav-center {
+        max-width: 1170px;
+        margin: 0;
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .link {
+        font-size: 40px;
+        display: block;
+        text-transform: capitalize;
+    }
+
+    .social-icons {
+        display: none;
+    }
+}
